@@ -64,21 +64,15 @@ void secondpage()
 		cout << "Input the courses you desire to take: ";
 		cin >> courses[i];
 		
-		for (int i = 0; i < 6; i++)
-		{
-			cout << "Input the courses you desire to take: ";
-			cin >> crs_hours[i];
-			
-			for (int i = 0; i < 6; i++)
-			{
-				cout << "Input the courses you desire to take: ";
-				cin >> crs_number[i];	
-			}
-		}
 	}
 	for (int i = 0; i < 6; i++)
 	{
-		cout << "Input the courses you desire to take: ";
+		cout << "How many course hours is: " << courses[i];
+		cin >> crs_hours;
+	}
+	for (int i = 0; i < 6; i++)
+	{
+		cout << "What is the course number for: " << courses[i];
 		cin >> crs_number[i];	
 	}
 	cout << "\n";
