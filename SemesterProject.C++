@@ -46,7 +46,9 @@ void secondpage()
 	string stu_number;
 	string lastName;
 	string firstName;
-	string courses[7];
+	string courses[6];
+	int crs_hours[6];
+	int crs_number[6];
 	
 	cout << "Please Enter the Following information: \n";
 	cout << "Student Number: ";
@@ -56,23 +58,28 @@ void secondpage()
 	cout << "Student's First Name: ";
 	cin >> firstName;
 
-	// Allows the array to be populated
+	// Allows the courses array to be populated
 	for (int i = 0; i < 6; i++)
 	{
+		cout << "Input the courses you desire to take: ";
+		cin >> courses[i];
 		
-		for (int j = 0; j < 1; j++)
+		for (int i = 0; i < 6; i++)
 		{
-		
-			for (int k = 0; k < 1; k++)
+			cout << "Input the courses you desire to take: ";
+			cin >> crs_hours[i];
+			
+			for (int i = 0; i < 6; i++)
 			{
 				cout << "Input the courses you desire to take: ";
-				cin >> courses[i];
-				cout << "How many course hours is this class: ";
-				cin >> courses[j];
-				cout << "What is the section number for this class: ";
-				cin >> courses[k];
+				cin >> crs_number[i];	
 			}
 		}
+	}
+	for (int i = 0; i < 6; i++)
+	{
+		cout << "Input the courses you desire to take: ";
+		cin >> crs_number[i];	
 	}
 	cout << "\n";
 	cout << "\n";
