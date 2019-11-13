@@ -58,6 +58,7 @@ void secondpage()
 	cout << "Student's First Name: ";
 	cin >> firstName;
 
+	// I should consider using an input file for course number and hours
 	// Allows the courses array to be populated
 	for (int i = 0; i < 6; i++)
 	{
